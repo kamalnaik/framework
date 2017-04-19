@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <test name="Test(failed)" parallel="methods">
+    <classes>
+      <class name="com.hrm.scripts.ExplicitLoginScenario">
+        <methods>
+          <include name="initApplication"/>
+          <include name="cleanApplication"/>
+          <include name="postCondition"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- com.hrm.scripts.ExplicitLoginScenario -->
+      <class name="com.hrm.scripts.VerifyLogo">
+        <methods>
+          <include name="initApplication"/>
+          <include name="cleanApplication"/>
+          <include name="postCondition"/>
+          <include name="preCondition"/>
+          <include name="testLogo"/>
+        </methods>
+      </class> <!-- com.hrm.scripts.VerifyLogo -->
+      <class name="com.hrm.scripts.VerifyLoginLogout">
+        <methods>
+          <include name="initBrowser"/>
+          <include name="initApplication"/>
+          <include name="initFrameWork"/>
+          <include name="cleanApplication"/>
+          <include name="postCondition"/>
+          <include name="closeBrowser"/>
+          <include name="preCondition"/>
+          <include name="testLoginLogout"/>
+          <include name="closeFrameWork"/>
+        </methods>
+      </class> <!-- com.hrm.scripts.VerifyLoginLogout -->
+      <class name="com.hrm.scripts.AddEmployee">
+        <methods>
+          <include name="initApplication"/>
+          <include name="cleanApplication"/>
+          <include name="postCondition"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- com.hrm.scripts.AddEmployee -->
+      <class name="com.hrm.scripts.CreateAdmin">
+        <methods>
+          <include name="initApplication"/>
+          <include name="cleanApplication"/>
+          <include name="postCondition"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- com.hrm.scripts.CreateAdmin -->
+      <class name="com.hrm.scripts.CreateDeleteEmployee">
+        <methods>
+          <include name="initApplication"/>
+          <include name="cleanApplication"/>
+          <include name="testCreateDeleteEmployee"/>
+          <include name="postCondition"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- com.hrm.scripts.CreateDeleteEmployee -->
+      <class name="com.hrm.scripts.ImplicitLoginScenario">
+        <methods>
+          <include name="initApplication"/>
+          <include name="cleanApplication"/>
+          <include name="postCondition"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- com.hrm.scripts.ImplicitLoginScenario -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

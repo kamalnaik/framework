@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [OrangeSuite]">
+  <parameter name="browser" value="firefox"/>
+  <test name="FirefoxTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.hrm.scripts.ImplicitLoginScenario">
+        <methods>
+          <include name="testLoginScenario"/>
+        </methods>
+      </class> <!-- com.hrm.scripts.ImplicitLoginScenario -->
+      <class name="com.hrm.scripts.ExplicitLoginScenario">
+        <methods>
+          <include name="initBrowser"/>
+          <include name="initApplication"/>
+          <include name="initFrameWork"/>
+          <include name="testLoginScenario"/>
+        </methods>
+      </class> <!-- com.hrm.scripts.ExplicitLoginScenario -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [OrangeSuite] -->
